@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISAZSKursachЗаправБак",
+  "modelName": "i-i-s-a-z-s-kursach-заправ-бак",
+  "className": "ЗаправБак",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "объем",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "техсост",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типТопл",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "уровЗалив",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаправБакE",
+      "modelName": "i-i-s-a-z-s-kursach-заправ-бак",
+      "attrs": [
+        {
+          "name": "типТопл",
+          "caption": "Тип топлива",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "уровЗалив",
+          "caption": "Уровень заливки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "техсост",
+          "caption": "Техническое состояние",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаправБакL",
+      "modelName": "i-i-s-a-z-s-kursach-заправ-бак",
+      "attrs": [
+        {
+          "name": "типТопл",
+          "caption": "Тип топлива",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "объем",
+          "caption": "Объем",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "уровЗалив",
+          "caption": "Уровень заливки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "техсост",
+          "caption": "Техническое состояние",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

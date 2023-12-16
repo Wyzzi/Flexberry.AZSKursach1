@@ -1,0 +1,176 @@
+﻿{
+  "name": "IISAZSKursachЧек",
+  "modelName": "i-i-s-a-z-s-kursach-чек",
+  "className": "Чек",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправкаАвто",
+      "relatedTo": "i-i-s-a-z-s-kursach-заправка-авто",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-a-z-s-kursach-клиент",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧТовары",
+      "relatedTo": "i-i-s-a-z-s-kursach-т-ч-товары",
+      "inverse": "чек"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЧекE",
+      "modelName": "i-i-s-a-z-s-kursach-чек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наимен",
+          "lookupValueField": "наимен",
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "ФИО клиента",
+          "name": "клиент",
+          "relatedTo": "i-i-s-a-z-s-kursach-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": "КолТоп",
+          "lookupValueField": "колТоп",
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Заправка автомобиля",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправка-авто",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧТоварыE",
+          "caption": "Товары",
+          "name": "тЧТовары",
+          "relatedTo": "i-i-s-a-z-s-kursach-т-ч-товары",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЧекL",
+      "modelName": "i-i-s-a-z-s-kursach-чек",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимен",
+              "caption": "ФИО клиента",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО клиента",
+          "name": "клиент",
+          "relatedTo": "i-i-s-a-z-s-kursach-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаправкаАвто",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "колТоп",
+              "caption": "Количество топлива",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество топлива",
+          "name": "заправкаАвто",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправка-авто",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

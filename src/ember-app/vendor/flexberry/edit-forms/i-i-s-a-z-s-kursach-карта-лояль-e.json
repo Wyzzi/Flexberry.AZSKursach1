@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Карта лояльности",
+  "name": "IISAZSKursachКартаЛояльE",
+  "className": "КартаЛояльE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-карта-лояль",
+      "modelProjection": "КартаЛояльE"
+    }
+  ]
+}

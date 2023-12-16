@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <Configurations>Debug;Release</Configurations>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>IIS.AZSKursach</RootNamespace>
+    <AssemblyName>AZSKursach.Tests</AssemblyName>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>
+    <XunitStartupFullName>IIS.AZSKursach.Startup</XunitStartupFullName>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0"></PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="appsettings.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NewPlatform.Flexberry.StyleCopRuleset" Version="1.0.0"></PackageReference>
+    <PackageReference Include="NewPlatform.Flexberry.ORM" Version="7.1.1"></PackageReference>
+    <PackageReference Include="Moq" Version="4.20.70"></PackageReference>
+    <PackageReference Include="xunit" Version="2.6.3"></PackageReference>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.5"></PackageReference>
+    <PackageReference Include="NewPlatform.Flexberry.ORM.PostgresDataService" Version="7.1.1"></PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Objects\AZSKursach.Objects.csproj"></ProjectReference>
+  </ItemGroup>
+</Project>

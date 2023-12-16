@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Товарный справочник",
+  "name": "IISAZSKursachТоварыСпрE",
+  "className": "ТоварыСпрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-товары-спр",
+      "modelProjection": "ТоварыСпрE"
+    }
+  ]
+}

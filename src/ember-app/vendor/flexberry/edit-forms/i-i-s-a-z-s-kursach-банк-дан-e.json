@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Банковские данные",
+  "name": "IISAZSKursachБанкДанE",
+  "className": "БанкДанE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-банк-дан",
+      "modelProjection": "БанкДанE"
+    }
+  ]
+}

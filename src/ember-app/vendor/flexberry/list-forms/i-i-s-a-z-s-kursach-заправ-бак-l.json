@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-a-z-s-kursach-заправ-бак-e",
+  "editForm": "i-i-s-a-z-s-kursach-заправ-бак-e",
+  "external": false,
+  "caption": "Цистерна топлива",
+  "name": "IISAZSKursachЗаправБакL",
+  "className": "ЗаправБакL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-заправ-бак",
+      "modelProjection": "ЗаправБакL"
+    }
+  ]
+}

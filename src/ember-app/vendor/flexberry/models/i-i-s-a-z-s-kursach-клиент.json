@@ -1,0 +1,204 @@
+﻿{
+  "name": "IISAZSKursachКлиент",
+  "modelName": "i-i-s-a-z-s-kursach-клиент",
+  "className": "Клиент",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "eMail",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаРожд",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимен",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номТел",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "банкДан",
+      "relatedTo": "i-i-s-a-z-s-kursach-банк-дан",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "картаЛояль",
+      "relatedTo": "i-i-s-a-z-s-kursach-карта-лояль",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КлиентE",
+      "modelName": "i-i-s-a-z-s-kursach-клиент",
+      "attrs": [
+        {
+          "name": "номТел",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимен",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "eMail",
+          "caption": "E mail",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Ном",
+          "lookupValueField": "ном",
+          "relationName": "КартаЛояль",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Карта лояльности",
+          "name": "картаЛояль",
+          "relatedTo": "i-i-s-a-z-s-kursach-карта-лояль",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НомКарт",
+          "lookupValueField": "номКарт",
+          "relationName": "БанкДан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 5,
+          "type": "standard",
+          "caption": "Банковские данные",
+          "name": "банкДан",
+          "relatedTo": "i-i-s-a-z-s-kursach-банк-дан",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КлиентL",
+      "modelName": "i-i-s-a-z-s-kursach-клиент",
+      "attrs": [
+        {
+          "name": "номТел",
+          "caption": "Номер телефона",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаРожд",
+          "caption": "Дата рождения",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наимен",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "eMail",
+          "caption": "E mail",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БанкДан",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номКарт",
+              "caption": "Банковская карта",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Банковская карта",
+          "name": "банкДан",
+          "relatedTo": "i-i-s-a-z-s-kursach-банк-дан",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "КартаЛояль",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "ном",
+              "caption": "Карта лояльности",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Карта лояльности",
+          "name": "картаЛояль",
+          "relatedTo": "i-i-s-a-z-s-kursach-карта-лояль",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

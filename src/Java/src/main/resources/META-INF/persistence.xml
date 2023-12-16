@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>AZSKursach.model.TovarySpr</class>
+        <class>AZSKursach.model.BankDan</class>
+        <class>AZSKursach.model.ZapravkaAvto</class>
+        <class>AZSKursach.model.ZapravBak</class>
+        <class>AZSKursach.model.CHek</class>
+        <class>AZSKursach.model.Klient</class>
+        <class>AZSKursach.model.KartaLoyal</class>
+        <class>AZSKursach.model.TCHTovary</class>
+        <class>AZSKursach.model.FlexberryAdvLimit</class>
+        <class>AZSKursach.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>AZSKursach.model.NewPlatformFlexberryServicesLock</class>
+        <class>AZSKursach.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

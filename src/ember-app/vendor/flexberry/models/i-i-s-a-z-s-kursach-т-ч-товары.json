@@ -1,0 +1,70 @@
+﻿{
+  "name": "IISAZSKursachТЧТовары",
+  "modelName": "i-i-s-a-z-s-kursach-т-ч-товары",
+  "className": "ТЧТовары",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товарыСпр",
+      "relatedTo": "i-i-s-a-z-s-kursach-товары-спр",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "чек",
+      "relatedTo": "i-i-s-a-z-s-kursach-чек",
+      "inverse": "тЧТовары"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧТоварыE",
+      "modelName": "i-i-s-a-z-s-kursach-т-ч-товары",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Наим",
+          "lookupValueField": "наим",
+          "relationName": "ТоварыСпр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 0,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товарыСпр",
+          "relatedTo": "i-i-s-a-z-s-kursach-товары-спр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

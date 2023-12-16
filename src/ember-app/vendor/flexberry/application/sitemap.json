@@ -1,0 +1,88 @@
+﻿{
+  "applicationCaption": "АЗС самообслуживания",
+  "applicationTitle": "A z s kursach",
+  "items": [
+    {
+      "link": null,
+      "menuName": "чековые-данные",
+      "caption": "Чековые данные",
+      "title": "Чековые данные",
+      "children": [
+        {
+          "link": "i-i-s-a-z-s-kursach-чек-l",
+          "menuName": null,
+          "caption": "Чек",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "клиентские-данные",
+      "caption": "Клиентские данные",
+      "title": "Клиентские данные",
+      "children": [
+        {
+          "link": "i-i-s-a-z-s-kursach-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "Клиент",
+          "children": null
+        },
+        {
+          "link": "i-i-s-a-z-s-kursach-карта-лояль-l",
+          "menuName": null,
+          "caption": "Карты лояльности",
+          "title": "Карта лояль",
+          "children": null
+        },
+        {
+          "link": "i-i-s-a-z-s-kursach-банк-дан-l",
+          "menuName": null,
+          "caption": "Банковские данные",
+          "title": "Банк дан",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "товары",
+      "caption": "Товары",
+      "title": "Товары",
+      "children": [
+        {
+          "link": "i-i-s-a-z-s-kursach-товары-спр-l",
+          "menuName": null,
+          "caption": "Товары",
+          "title": "Товары спр",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "а-з-с",
+      "caption": "АЗС",
+      "title": "АЗС",
+      "children": [
+        {
+          "link": "i-i-s-a-z-s-kursach-заправ-бак-l",
+          "menuName": null,
+          "caption": "Цистерна",
+          "title": "Заправ бак",
+          "children": null
+        },
+        {
+          "link": "i-i-s-a-z-s-kursach-заправка-авто-l",
+          "menuName": null,
+          "caption": "Заправка автомобиля",
+          "title": "Заправка авто",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

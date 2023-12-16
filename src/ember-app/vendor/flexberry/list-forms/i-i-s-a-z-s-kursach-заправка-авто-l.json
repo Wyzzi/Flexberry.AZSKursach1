@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-a-z-s-kursach-заправка-авто-e",
+  "editForm": "i-i-s-a-z-s-kursach-заправка-авто-e",
+  "external": false,
+  "caption": "Заправка авто",
+  "name": "IISAZSKursachЗаправкаАвтоL",
+  "className": "ЗаправкаАвтоL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-заправка-авто",
+      "modelProjection": "ЗаправкаАвтоL"
+    }
+  ]
+}

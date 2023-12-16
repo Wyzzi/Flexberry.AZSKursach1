@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент",
+      "projection": "КлиентL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗаправкаАвто",
+      "projection": "ЗаправкаАвтоL",
+      "detailModelName": null
+    },
+    {
+      "master": "товарыСпр",
+      "displayAttributeName": "наим",
+      "required": true,
+      "relationName": "ТЧТовары.ТоварыСпр",
+      "projection": "ТоварыСпрL",
+      "detailModelName": "i-i-s-a-z-s-kursach-т-ч-товары"
+    }
+  ],
+  "external": false,
+  "caption": "Чек",
+  "name": "IISAZSKursachЧекE",
+  "className": "ЧекE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-чек",
+      "modelProjection": "ЧекE"
+    }
+  ]
+}

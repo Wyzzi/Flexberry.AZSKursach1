@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Цистерна топлива",
+  "name": "IISAZSKursachЗаправБакE",
+  "className": "ЗаправБакE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-заправ-бак",
+      "modelProjection": "ЗаправБакE"
+    }
+  ]
+}

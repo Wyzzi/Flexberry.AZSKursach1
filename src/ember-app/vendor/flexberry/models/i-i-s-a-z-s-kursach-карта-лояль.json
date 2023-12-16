@@ -1,0 +1,96 @@
+﻿{
+  "name": "IISAZSKursachКартаЛояль",
+  "modelName": "i-i-s-a-z-s-kursach-карта-лояль",
+  "className": "КартаЛояль",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "ном",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "процСкид",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "суммПокуп",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КартаЛояльE",
+      "modelName": "i-i-s-a-z-s-kursach-карта-лояль",
+      "attrs": [
+        {
+          "name": "ном",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "процСкид",
+          "caption": "Процент скидок",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммПокуп",
+          "caption": "Сумма покупок",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "КартаЛояльL",
+      "modelName": "i-i-s-a-z-s-kursach-карта-лояль",
+      "attrs": [
+        {
+          "name": "ном",
+          "caption": "Номер карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "процСкид",
+          "caption": "Процент скидки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "суммПокуп",
+          "caption": "Сумма покупок",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

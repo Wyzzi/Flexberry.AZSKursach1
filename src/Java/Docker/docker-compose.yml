@@ -1,0 +1,26 @@
+﻿version: '3'
+
+services:
+  webapp:
+    image: azskursach-java/app
+    build: ../main/webapp
+    environment:
+      DB_ADDR: app-postgres-db
+      DB_NAME: appdb
+      DB_USER: postgres
+      DB_PASS: p@ssw0rd
+      JPDA_ADDRESS: 8000
+      JPDA_TRANSPORT: dt_socket
+    entrypoint: /usr/local/tomcat/bin/catalina.sh jpda run
+    ports:
+      - "80:8080"
+      - "8000:8000"
+
+  app-postgres-db:
+    image: azskursach-java/postgre-sql
+    volumes:
+      - DB:/var/lib/pgsql/data/
+    ports:
+      - "5432:5432"
+volumes:
+  DB:

@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISAZSKursachТоварыСпр",
+  "modelName": "i-i-s-a-z-s-kursach-товары-спр",
+  "className": "ТоварыСпр",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наим",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "float",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварыСпрE",
+      "modelName": "i-i-s-a-z-s-kursach-товары-спр",
+      "attrs": [
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "наим",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварыСпрL",
+      "modelName": "i-i-s-a-z-s-kursach-товары-спр",
+      "attrs": [
+        {
+          "name": "наим",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

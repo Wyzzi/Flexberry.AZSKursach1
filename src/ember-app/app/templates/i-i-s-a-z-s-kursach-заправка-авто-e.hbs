@@ -1,0 +1,75 @@
+<h3 class="ui header">{{t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номКол
+      class=(if (v-get validationModel "номКол" "isInvalid") "error")
+      label=(t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.номКол-caption")
+      data-test-i-i-s-a-z-s-kursach-заправка-авто-e-номКол=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номКол" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.номШл
+      class=(if (v-get validationModel "номШл" "isInvalid") "error")
+      label=(t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.номШл-caption")
+      data-test-i-i-s-a-z-s-kursach-заправка-авто-e-номШл=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "номШл" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.колТоп
+      class=(if (v-get validationModel "колТоп" "isInvalid") "error")
+      label=(t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.колТоп-caption")
+      data-test-i-i-s-a-z-s-kursach-заправка-авто-e-колТоп=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "колТоп" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.заправБак-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.заправБак
+      displayAttributeName="типТопл"
+      autocomplete=true
+      relationName="заправБак"
+      projection="ЗаправБакL"
+      title=(t "forms.i-i-s-a-z-s-kursach-заправка-авто-e.заправБак-caption")
+      readonly=readonly
+      componentName="заправБакLookup"
+      class=(if (v-get validationModel "заправБак" "isInvalid") "error")
+      data-test-i-i-s-a-z-s-kursach-заправка-авто-e-заправБак=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "заправБак" "message")}}
+  </div>
+</form>

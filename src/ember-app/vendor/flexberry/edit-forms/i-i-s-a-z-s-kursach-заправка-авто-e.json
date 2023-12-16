@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЗаправБак",
+      "projection": "ЗаправБакL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Заправка авто",
+  "name": "IISAZSKursachЗаправкаАвтоE",
+  "className": "ЗаправкаАвтоE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-заправка-авто",
+      "modelProjection": "ЗаправкаАвтоE"
+    }
+  ]
+}

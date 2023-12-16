@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-a-z-s-kursach-товары-спр-e",
+  "editForm": "i-i-s-a-z-s-kursach-товары-спр-e",
+  "external": false,
+  "caption": "Товарный справочник",
+  "name": "IISAZSKursachТоварыСпрL",
+  "className": "ТоварыСпрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-товары-спр",
+      "modelProjection": "ТоварыСпрL"
+    }
+  ]
+}

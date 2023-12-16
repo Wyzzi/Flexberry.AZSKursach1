@@ -1,0 +1,141 @@
+﻿{
+  "name": "IISAZSKursachЗаправкаАвто",
+  "modelName": "i-i-s-a-z-s-kursach-заправка-авто",
+  "className": "ЗаправкаАвто",
+  "nameSpace": "IIS.AZSKursach",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "колТоп",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номКол",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номШл",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "заправБак",
+      "relatedTo": "i-i-s-a-z-s-kursach-заправ-бак",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ЗаправкаАвтоE",
+      "modelName": "i-i-s-a-z-s-kursach-заправка-авто",
+      "attrs": [
+        {
+          "name": "номКол",
+          "caption": "Номер колонки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номШл",
+          "caption": "Номер шланга",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "колТоп",
+          "caption": "Количество топлива",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ТипТопл",
+          "lookupValueField": "типТопл",
+          "relationName": "ЗаправБак",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 3,
+          "type": "standard",
+          "caption": "Тип топлива",
+          "name": "заправБак",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправ-бак",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ЗаправкаАвтоL",
+      "modelName": "i-i-s-a-z-s-kursach-заправка-авто",
+      "attrs": [
+        {
+          "name": "номКол",
+          "caption": "Номер колонки",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номШл",
+          "caption": "Номер шланга",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "колТоп",
+          "caption": "Количество топлива",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ЗаправБак",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "типТопл",
+              "caption": "Тип топлива",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип топлива",
+          "name": "заправБак",
+          "relatedTo": "i-i-s-a-z-s-kursach-заправ-бак",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

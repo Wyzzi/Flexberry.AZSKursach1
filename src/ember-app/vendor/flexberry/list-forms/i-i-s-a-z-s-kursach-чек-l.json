@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-a-z-s-kursach-чек-e",
+  "editForm": "i-i-s-a-z-s-kursach-чек-e",
+  "external": false,
+  "caption": "Чек",
+  "name": "IISAZSKursachЧекL",
+  "className": "ЧекL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-чек",
+      "modelProjection": "ЧекL"
+    }
+  ]
+}

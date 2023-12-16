@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-a-z-s-kursach-банк-дан-e",
+  "editForm": "i-i-s-a-z-s-kursach-банк-дан-e",
+  "external": false,
+  "caption": "Банковские данные",
+  "name": "IISAZSKursachБанкДанL",
+  "className": "БанкДанL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-a-z-s-kursach-банк-дан",
+      "modelProjection": "БанкДанL"
+    }
+  ]
+}
